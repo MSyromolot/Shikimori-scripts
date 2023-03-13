@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Shikimori watch
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  try to take over the world!
-// @author       You
+// @author       Zver
 // @match        https://shikimori.one/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=shikimori.one
 // @grant        none
@@ -36,6 +36,7 @@ function createButton(){
     btnWatch.style.margin = "0px 4px 0px 3px";
 
     link.setAttribute('href', 'https://kodikdb.com/find-player?shikimoriID=' + id);
+    link.setAttribute('target', '_blank');
     link.style.display = "block";
     link.style.background = "#343434";
     link.style.color = "#fff";
