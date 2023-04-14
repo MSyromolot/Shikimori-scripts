@@ -4,7 +4,7 @@
 // @version      0.3
 // @description  try to take over the world!
 // @author       Zver
-// @match        https://shikimori.one/*
+// @match        https://shikimori.me/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=shikimori.one
 // @grant        none
 // ==/UserScript==
