@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shikimori watch
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.3.1
 // @description  try to take over the world!
 // @author       Zver
 // @match        https://shikimori.me/*
@@ -12,7 +12,7 @@
 function main(){
     'use strict';
 
-    if (location.href.includes("/animes/") && document.querySelector("h1")) {
+    if (location.href.includes("/animes/") && document.querySelector("h1") && document.getElementsByClassName("btnWatchWatch").length) {
         createButton();
         return;
     }
